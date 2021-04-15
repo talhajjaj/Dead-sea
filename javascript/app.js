@@ -13,16 +13,49 @@ var purpose = prompt('please enter your purpose of visiting us?');
 console.log('purpose');
 
 
-// var foodType = prompt('please enter a food type (mansaf , shawarmah)?')
+// var visit = prompt('please enter what you will visit (resturant , hotels)?')
 
-// if(foodType =='mansaf')
+// if(visit =='resturant')
 // {
-//   var image = '<img src="https://www.experiencejordan.com/wp-content/uploads/2016/10/Blog-Headers2-1.jpg" alt= "mansaf"/>';
-//   //create mansaf image
+//   var image = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaLQFNYQVWAo5Mmuv4HSXAgx4aKiIyJlt-9Q&usqp=CAU" alt= "resturant"/>';
+//   //create resturant image
 //   document.write(image);
   
-// }else if(foodType =='shawarmah'){
-//   //create shawarmah image
-//   var image2 = '<img src="img/shawarmah.jpg" alt= "shawarmah"/>';
+// }
+// else if(visit =='hotels'){
+//   //create hotels image
+//   var image2 = '<img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/25/88/25887_v10.jpeg" alt= "hotels"/>';
 //   document.write(image2);
 // }
+// //ask the user what he will visit( resturant, hotels).
+// // if the user enter resturant print a resturant image
+
+// //if the user enter hotels print a hotels image
+var visit = prompt('please enter what you will visit (resturant , hotels)?');
+
+while (visit !== 'resturant' &&  visit !== 'hotels') {
+  visit = prompt('please enter how many times you will visit (resturant , hotels?');
+}
+console.log(visit);
+// // console.log('visit ' 
+// // + visit);
+
+var visitNumber = prompt('please enter how many times you will visit (resturant , hotels?');
+
+
+
+  if (visit == 'resturant') {
+    for (var i = 1; i <= visitNumber; i++) {
+
+    var image = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaLQFNYQVWAo5Mmuv4HSXAgx4aKiIyJlt-9Q&usqp=CAU" alt=" alt= "resturant"/>';
+    //create resturant image
+    document.write(image);
+}
+  } else if (visit == 'hotels') {
+    for (var i = 0; i <= visitNumber; i++) {
+    //create hotels image
+    var image2 = '<img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/25/88/25887_v10.jpeg" alt= "hotels"/>';
+
+    document.write(image2);
+    }
+  }
