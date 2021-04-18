@@ -37,25 +37,34 @@ while (visit !== 'resturant' &&  visit !== 'hotels') {
   visit = prompt('please enter how many times you will visit (resturant , hotels?');
 }
 console.log(visit);
+
+// function visit(asking) 
+var asking = function (visit)
+{
+  var asking = prompt('please enter what you will' + visit+ '?');
+  
+  return asking;
+  }
+
 // // console.log('visit ' 
 // // + visit);
 
-var visitNumber = prompt('please enter how many times you will visit (resturant , hotels?');
+// var visitNumber = prompt('please enter how many times you will visit (resturant , hotels?');
 
 
 
-  if (visit == 'resturant') {
-    for (var i = 1; i <= visitNumber; i++) {
+//   if (visit == 'resturant') {
+//     for (var i = 1; i <= visitNumber; i++) {
 
-    var image = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaLQFNYQVWAo5Mmuv4HSXAgx4aKiIyJlt-9Q&usqp=CAU" alt=" alt= "resturant"/>';
-    //create resturant image
-    document.write(image);
-}
-  } else if (visit == 'hotels') {
-    for (var i = 0; i <= visitNumber; i++) {
-    //create hotels image
-    var image2 = '<img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/25/88/25887_v10.jpeg" alt= "hotels"/>';
+//     var image = '<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaLQFNYQVWAo5Mmuv4HSXAgx4aKiIyJlt-9Q&usqp=CAU" alt=" alt= "resturant"/>';
+//     //create resturant image
+//     document.write(image);
+// }
+//   } else if (visit == 'hotels') {
+//     for (var i = 0; i <= visitNumber; i++) {
+//     //create hotels image
+//     var image2 = '<img src="https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/25/88/25887_v10.jpeg" alt= "hotels"/>';
 
-    document.write(image2);
-    }
-  }
+//     document.write(image2);
+//     }
+//   }
